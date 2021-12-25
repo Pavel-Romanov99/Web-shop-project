@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 var fs = require("fs");
 //in order to check if someone is logged in we use sessions
 const session = require("express-session");
