@@ -254,4 +254,8 @@ a.ssolink {
     overflow: hidden;
     height: 100vh;
   }
+
+  .formbg {
+    height: 50vh;
+  }
 }
