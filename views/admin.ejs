@@ -1,0 +1,52 @@
+<% layout('../layout/boilerplate.ejs') %>
+    <div class="form-container">
+        <form style="width: 80%" action="/stats" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="brand" name="brand">
+                <input type="text" class="form-control" placeholder="price" name="price">
+                <input type="file" class="form-control-file" name="uploaded_file">
+                <input type="submit" value="Get me the stats!" class="btn btn-dark">
+            </div>
+        </form>
+    </div>
+
+    <div class="container" style="margin-bottom: 10%;">
+        <div class="row">
+            <% items.forEach(function(item){ %>
+                <div class="col-md-4 col-xs-6">
+                    <div class="card">
+                        <img class="card-img-top" src="<%= item.image %> " alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= item.brand %>
+                            </h5>
+                            <div class="size-container">
+                                <span class="price">
+                                    <%= item.price %> лв.
+                                </span>
+                                <input type="number" id="quantity" name="quantity" min="1" max="99" value="1">
+                                <select id="size" name="size">
+                                    <option value="size" disabled selected>Size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+                            <div class="crud-container">
+                                <form action="/delete/<%=item.id %>" method="POST">
+                                    <button>Delete item</button>
+                                </form>
+                                <form action="/update/<%=item.id %>" method="POST">
+                                    <input type="text" name="price" placeholder="change price to">
+                                    <button>Update Price</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+        </div>
+
+    </div>

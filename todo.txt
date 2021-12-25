@@ -1,0 +1,22 @@
+Done
+- login / register pages (done)
+- style the login / register pages(done)
+- login / register logic(done)
+- link mongoose(done)
+- create model for the user(done)
+- fix logo when logged in(done)
+- admin button(done)
+- admin can create new items to the shop(done)
+- fix cards styles(done)
+- create a model for the product(done)
+- admin profile(done)
+- add remove and update button to products as admin(done)
+- when you click the image it takes you to the bigger page(done)
+- make a new homapage(done)
+- shopping cart(done)
+- fix styles for the product page(done)
+-fix if size field is empty(done)
+-flash messages(done)
+
+Todos
+

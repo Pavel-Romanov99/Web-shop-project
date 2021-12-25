@@ -1,0 +1,254 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row{
+    margin-top: 15%;
+}
+
+.error-container{
+    margin: 10%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper-shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.logout-button{
+    border: none;
+    background-color: rgb(255, 255, 100);
+    color:rgba(0,0,0,.55);
+    margin: 0;
+}
+  .price{
+      font-weight: 700;
+      color: red;
+  }
+
+.info-wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.photos-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos-wrapper img{
+    border: 2px solid black;
+}
+
+.buy-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ededed;
+    width: 26%;
+    margin-left: 4rem;
+    border-radius: 8px;
+    box-shadow: 13px 13px 20px #cbced1;
+
+}
+
+.brand{
+    color: black;
+}
+
+.brand-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+    margin: 5%;
+}
+
+.destination{
+    width: 90%;
+    padding: 5px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #fafafa;
+    border: 1px solid #ededed;
+}
+
+.gps{
+    width: 15%;
+    height: auto;
+}
+
+.truck, .return-icon, .check-icon{
+    margin-top: 7px;
+    width: 40px;
+    height: 35px;
+}
+
+.office{
+    margin-top: 12px;
+    width: 40px;
+    height: 35px;
+}
+
+.return-icon, .check-icon{
+    margin-top: 6px;
+
+}
+
+.size-container{
+    margin-top: 2%;
+}
+
+.standart-delivery, .home-delivery, .return, .check{
+    width: 90%;
+    padding:5px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: white;    
+    align-items: flex-start;
+}
+
+.delivery-p{
+    font-size: 13px;
+    color: grey;
+    padding-right: 10px;
+    padding-left: 4px;
+}
+
+strong{
+    color:black;
+}
+
+#sofia{
+    margin-top: 10px;
+    padding-left: 7px;
+}
+
+.return-wrapper{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.price{
+    font-weight: 600;
+    color: crimson;
+    font-size: 20px;
+}
+
+.logo{
+    margin-left: 10px;
+}
+
+.admin-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.admin-cards-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.top-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.admin-cards-container img{
+    max-width: 500px;
+    height: auto;
+}
+
+.card{
+    margin: 3%;
+}
+
+.card-shop{
+    border: 1px solid black;
+    margin-bottom: 8%;
+}
+
+.big-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10%;
+    height: 90vh;
+}
+
+.card-img-top{
+    max-width: 500px;
+    max-height: 550px;
+}
+
+.crud-container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-position: top 55px right 0px;
+}
+
+#navbar {
+    background-color: rgb(255, 255, 100);
+}
+
+.main-page {
+    height: 100vh;
+}

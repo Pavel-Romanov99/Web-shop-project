@@ -1,0 +1,55 @@
+<% layout('../layout/boilerplate.ejs') %>
+
+    <div class="wrapper-product">
+        <div class="info-wrapper">
+            <div class="photos-wrapper">
+                <img style="max-width: 550px;" src=" <%=item.image %>">
+            </div>
+            <div class="buy-wrapper">
+
+                <div class="brand-wrapper">
+                    <h2 class="brand">
+                        <%= item.brand %>
+                    </h2>
+                    <div class="description"><strong>Описание:</strong> Яке с ниска яка</div>
+                    <div class="price">Цена: <%= item.price %> лв.
+                    </div>
+                </div>
+
+
+                <div class="delivery-wrapper">
+                    <div class="destination">
+                        <img class="gps" src="../public/photos/gps.png" alt="">
+                        <div id="sofia">Доставка в: София</div>
+                    </div>
+                    <div class="standart-delivery">
+                        <img class="truck" src="../public/photos/truck.PNG" alt="">
+                        <p class="delivery-p"><strong>Стандартна доставка:</strong> Безплатна Такса за обработка на
+                            плащане при доставка: 2 лв. на поръчка При плащане към момента на поръчка – такса за
+                            обработване не се начислява
+                            понеделник, 30 ноември - сряда, 2 декември</p>
+                    </div>
+                    <div class="home-delivery">
+                        <img class="office" src="../public/photos/office.PNG" alt="">
+                        <p class="delivery-p"><strong>Доставка до офис на куриер:</strong>Безплатна Такса за обработка
+                            на плащане при доставка: 2 лв. на поръчка При плащане към момента на поръчка – такса за
+                            обработване не се начислява
+                            Може да я вземете от Еконт София Арсеналски От понеделник, 30 ноември, след 09:00</p>
+                    </div>
+                </div>
+
+                <div class="return-wrapper">
+                    <div class="return">
+                        <img class="return-icon" src="../public/photos/return.PNG" alt="">
+                        <p class="delivery-p">ВРЪЩАНЕ: ЗАЯВИ ПЪРВИТЕ 30 ДНИ</p>
+                    </div>
+                    <div class="check">
+                        <img class="check-icon" src="../public/photos/check.PNG" alt="">
+                        <p class="delivery-p">ПРОВЕРКА НА ПРАТКАТА</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>

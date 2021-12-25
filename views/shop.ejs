@@ -1,0 +1,51 @@
+<% layout('../layout/boilerplate.ejs') %>
+
+    <div class="error-container">
+        <%- include('../partials/err_msg.ejs') %>
+    </div>
+
+    <div class="wrapper-shop">
+        <div class="container" style="margin-bottom: 10%;">
+            <div class="row">
+                <% items.forEach(function(item){ %>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="card-shop">
+                            <a href="/product/<%= item.id %>"><img class="card-img-top" src="<%= item.image %> "
+                                    alt="Card image cap"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= item.brand %>
+                                </h5>
+                                <span class="price">
+                                    <%= item.price %> лв.
+                                </span>
+                                <div class="size-container">
+                                    <% if(session_id !=null) { %>
+                                        <form id="cart-form" action="/addCart/<%= item.id %>" method="POST">
+                                            <label for="quantity">Quantity</label>
+                                            <input type="number" class="form-control" id="quantity" name="quantity"
+                                                min="1" max="99" value="1">
+                                            <label for="size">Size</label>
+                                            <select id="size" class="form-control" name="size">
+                                                <option value="size" disabled selected>Size</option>
+                                                <option value="XS">XS</option>
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                                            <br>
+                                            <button class="btn btn-dark" type="submit">Add to Cart</button>
+
+                                        </form>
+                                        <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }); %>
+            </div>
+
+        </div>
+
+    </div>
